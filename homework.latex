@@ -1,0 +1,56 @@
+\documentclass[a4j,12pt,dvipdfmx,autodetect-engine]{jsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[noalphabet]{pxchfon}
+\usepackage{mathtools}
+\usepackage[japanese]{babel}
+\setminchofont{TakaoMincho.ttf}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+
+\newenvironment{problem}[1]{
+    \begin{tcolorbox}[enhanced,breakable,colback=black!6,colframe=black,boxrule=0.05em,%
+        arc=0.15em,left=0.6em,right=0.6em,top=0.85em,bottom=0.85em]
+        \vskip 0.5em
+        \par\noindent\textbf{#1}
+        \vskip 0.75em
+}
+{
+    \end{tcolorbox}
+}
+
+\newenvironment{solution}[1][解答]{
+    \textbf{#1}\\
+    }
+    {
+        \hfill $\square$
+        \vskip 1em
+    }
+
+
+\begin{document}
+
+\noindent 科目：量子力学\hfill 第一回課題\\
+氏名：高橋 彰\\
+学籍番号：12B34567 \\
+2024年4月9日\\
+\hrulefill
+
+
+\begin{problem}{演習１}
+    $\int_{-\pi}^{\pi}\cos nx \cos mx dx$ が $n=m>0$のとき$\pi$、それ以外は$0$ 、つまり$\pi \delta_{nm}$であることを示せ。
+\end{problem}
+
+\begin{solution}
+    ここに、回答を書きます。
+\end{solution}
+
+回答のあと。
+\end{document}
